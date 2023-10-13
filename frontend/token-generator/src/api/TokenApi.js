@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const ApiUrl = 'http://localhost:8080';
+export const ApiUrl = 'http://localhost:7000';
 
 export function generateTokenApi(digits, setLoading, setData) {
     axios.get(`${ApiUrl}/TokenGeneratorResource/generate?digits=${digits}`)
